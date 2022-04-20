@@ -1,0 +1,23 @@
+@import "../styles/rezeptseite.scss";
+
+.zutat {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 10% 35% 55%;
+    grid-template-areas: "checkbox menge bezeichnung";
+}
+
+.checkbox {
+    margin: auto;
+}
+
+.menge {
+    grid-area: menge;
+    text-align: left;
+    margin-right: auto;
+}
+
+.bezeichnung {
+    grid-area: bezeichnung;
+    text-align: left;
+}

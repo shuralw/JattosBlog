@@ -1,0 +1,199 @@
+$fontsizeHeader: 1rem;
+$fontsizeFließtext: 18px;
+$fontsizeHeadinggroß: 47px;
+$fontsizeFließtextgroß: 18px;
+$Abstandfließtext: 15px;
+$Abstandfließtextgroß: 100px;
+
+$font-familyRezepte: "Nunito Sans";
+$font-familyStandard: "Kalam";
+$font-familyPersönlicherText: "Crafty Girls";
+$font-familyUnterschrift: "Rock Salt";
+$font-familyÜberschrift: "Satisfy";
+
+.headercontainer {
+    background-color: #ce152b;
+    color: white;
+    height: 80 px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 15% auto auto;
+    grid-template-rows: 80px;
+    grid-template-areas: "headerlogo home meinerezepte glossar";
+}
+
+.headercontainer div {
+    margin: auto;
+    font-size: $fontsizeHeader;
+    font-family: $font-familyStandard;
+}
+
+.headercontainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerlogo {
+    grid-area: headerlogo;
+    width: 100%;
+    height: 100%;
+}
+
+.headerlogo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 70%;
+}
+
+.home {
+    grid-area: home;
+}
+
+.meierezepte {
+    grid-area: meinerezepte;
+}
+
+.glossar {
+    grid-area: glossar;
+}
+
+.current a {
+    color: #ddb88c;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+        "überschrift"
+        "überschriftbild"
+        "zutatenüberschrift"
+        "zutaten"
+        "schritte"
+        "abschluss";
+    position: absolute;
+    top: 100px;
+    grid-row-gap: 15px;
+    width: 100%;
+}
+
+.überschrift {
+    text-align: center;
+    color: #ce152b;
+    font-family: $font-familyÜberschrift;
+    font-size: $fontsizeHeadinggroß;
+    vertical-align: middle;
+}
+
+.überschriftbild {
+    grid-area: überschriftbild;
+    width: 100%;
+    height: 100%;
+}
+
+.überschriftbild img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.zutatenüberschrift {
+    text-align: center;
+    color: #ce152b;
+    font-family: $font-familyStandard;
+    font-size: $fontsizeFließtextgroß;
+    vertical-align: middle;
+}
+
+.zutaten {
+    grid-area: zutaten;
+    text-align: left;
+    color: #ce152b;
+    font-family: $font-familyStandard;
+    font-size: $fontsizeFließtext;
+    vertical-align: middle;
+    
+    display: flex;
+    flex-direction: column;
+    
+    .checkbox {
+        grid-area: checkbox;
+        margin: auto;
+    }
+    
+    .zutat {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 10% 35% 55%;
+        grid-template-areas: "checkbox menge bezeichnung";
+    }
+
+    .topspacer {
+        margin-top: 12px;
+    }
+}
+
+.menge {
+    grid-area: menge;
+    text-align: left;
+    margin-right: auto;
+}
+
+.bezeichnung {
+    grid-area: bezeichnung;
+    text-align: left;
+}
+
+.schritte {
+    grid-area: schritte;
+    display: flex;
+    flex-direction: column;
+
+    .schrittüberschrift {
+        text-align: center;
+        color: #ce152b;
+        font-family: $font-familyStandard;
+        font-size: $fontsizeFließtextgroß;
+        vertical-align: middle;
+        text-decoration: underline;
+    }
+
+    .schrittzutaten {
+        text-align: center;
+        color: #ce152b;
+        font-family: $font-familyStandard;
+        font-size: $fontsizeFließtext;
+        vertical-align: middle;
+        display: grid;
+    }
+
+    .schrittbeschreibung {
+        text-align: center;
+        color: #ce152b;
+        font-family: $font-familyStandard;
+        font-size: $fontsizeFließtext;
+        vertical-align: middle;
+    }
+
+    .schrittzutaten img {
+        display: block;
+        width: 25%;
+        margin: auto;
+        }
+}
+
+.abschluss {
+    grid-area: abschluss;
+    text-align: center;
+    color: #ce152b;
+    font-family: $font-familyÜberschrift;
+    font-size: $fontsizeHeadinggroß;
+    vertical-align: middle;
+}

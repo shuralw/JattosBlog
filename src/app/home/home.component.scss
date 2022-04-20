@@ -1,0 +1,176 @@
+$fontsizeHeader: 1rem;
+$fontsizeFließtext: 16px;
+$fontsizeHeadinggroß: 47px;
+$fontsizeFließtextgroß: 5rem;
+$Abstandfließtext: 15px;
+$Abstandfließtextgroß: 100px;
+
+$font-familyRezepte: "Nunito Sans";
+$font-familyStandard: "Kalam";
+$font-familyPersönlicherText: "Crafty Girls";
+$font-familyUnterschrift: "Rock Salt";
+$font-familyÜberschrift: "Satisfy";
+
+.headercontainer {
+    background-color: #CE152B;
+    color: white;
+    height: 80 px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 15% auto auto;
+    grid-template-rows: 80px;
+    grid-template-areas: "headerlogo home meinerezepte glossar";
+}
+
+.headercontainer div {
+    margin: auto;
+    font-size: $fontsizeHeader;
+    font-family: $font-familyStandard;
+}
+
+.headercontainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.headerlogo {
+    grid-area: headerlogo;
+    width: 100%;
+    height: 100%;
+}
+
+.headerlogo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    height: 70%;
+}
+
+.home {
+    grid-area: home;
+}
+
+.meierezepte {
+    grid-area: meinerezepte;
+}
+
+.glossar{
+    grid-area: glossar;
+}
+
+.current a {
+    color: #ddb88c;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "logo" 
+    "drobdown"
+    "überblog";
+    position: absolute;
+    top: 100px;
+    grid-row-gap: 15px;
+    width: 100%;
+}
+
+.dropbtn {
+    grid-area: dropbtn;
+    background-color: #CE152B;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+#myInput{
+    box-sizing: border-box;
+    background-image: url;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    grid-area: logo;
+    width: 50%;
+    margin: auto;
+}
+
+.logo img {
+    display: block;
+    width: 100%;
+}
+
+
+.überblog {
+    grid-area: überblog;
+}
+
+.fließtext {
+    text-align: center;
+    color: #CE152B;
+    font-family: $font-familyStandard;
+    vertical-align: middle;
+}
+
+.fließtextPersönlich {
+    text-align: center;
+    color: #CE152B;
+    font-family: $font-familyPersönlicherText;
+    vertical-align: middle;
+}
+
+
+@media only screen and (min-width: 1200px) {
+    .textgrößeüberschriften {
+        font-size: $fontsizeHeadinggroß;
+    }
+
+    .textgrößefießtext {
+        font-size: $fontsizeFließtextgroß;
+    }
+    
+    .fließtext {
+        text-align: center;
+        font-family: $font-familyStandard;
+    }    
+    
+    .fließtextPersönlich {
+        text-align: center;
+        font-family: $font-familyPersönlicherText;
+        vertical-align: middle;
+    }
+    
+}

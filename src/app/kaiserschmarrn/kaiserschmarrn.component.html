@@ -1,0 +1,193 @@
+<div class="headercontainer">
+
+    <div class="headerlogo">
+        <img src="assets/img/Logorundtransparent.png">
+    </div>
+
+    <div class="home">
+        <a routerLink="/home">Home</a>
+    </div>
+
+    <div class="meine-rezepte">
+        <a routerLink="/meinerezepte">Meine Rezepte</a>
+    </div>
+
+    <div class="glossar">
+        <a routerLink="/glossar">Glossar</a>
+    </div>
+
+</div>
+
+<div class="gridcontainer">
+
+    <div class="überschrift">
+        <a>Kaiserschmarrn</a>
+    </div>
+
+    <div class="überschriftbild">
+        <img src="assets/img/Kaiserschmarrn.jpg">
+    </div>
+
+    <div class="überschrifttext">
+        <a>Dieses Gericht erinnert mich an den Skiurlaub. <br />
+            Wenn man den ganzen Morgen über die Piste gedüst ist und dann mittags dieses leckere Gebäck essen kann.
+        </a>
+    </div>
+
+    <div class="unterschrifttext">
+        <a>Etwas
+        </a>
+        <a class="kategorieunterschrift hyperlinkentfernen " routerLink="/apfelmus"><u>Apfelmus</u></a>
+        <a>
+            und Puderzucker machen das Ganze dann perfekt! </a>
+    </div>
+
+    <div class="zutaten">
+        <u>Zutaten</u>
+
+        <app-zutat menge="4" bezeichnung="Eier (getrennt)"></app-zutat>
+        <app-zutat menge="1 Prise" bezeichnung="Salz"></app-zutat>
+        <app-zutat menge="3/8 l" bezeichnung="Milch"></app-zutat>
+        <app-zutat menge="2 EL" bezeichnung="Zucker"></app-zutat>
+        <app-zutat menge="150 g" bezeichnung="Mehl"></app-zutat>
+
+        <app-zutat class="topspacer" menge="1 Pkg." bezeichnung="Rosinen"></app-zutat>
+
+        <app-zutat class="topspacer" menge="250 g" bezeichnung="Butter"></app-zutat>
+
+    </div>
+
+    <div class="utensilien">
+        <u>Utensilien</u>
+
+        <div class="utensil">
+            <div class="checkbox">
+                <input type="checkbox">
+            </div>
+            <a class="menge"> </a>
+            <a class="bezeichnung"> Mixer </a>
+        </div>
+
+        <div class="utensil">
+            <div class="checkbox">
+                <input type="checkbox">
+            </div>
+            <a class="menge"> </a>
+            <a class="bezeichnung"> Pfanne </a>
+        </div>
+
+    </div>
+
+
+    <div class="schritte">
+        <div>
+            <a class="schrittüberschrift"> Schritt 1</a>
+
+            <div class="schrittzutaten">
+                <app-schrittzutat schrittzutatenbild="assets/img/Eier.jpg" schrittuntertitelmenge="4"
+                    schrittuntertitel="Eier"></app-schrittzutat>
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a>Zunächst müssen die Eier getrennt werden.</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="schrittüberschrift"> Schritt 2</a>
+
+            <div class="schrittzutaten">
+                <app-schrittzutat schrittzutatenbild="assets/img/Eiweiß.jpg" schrittuntertitelmenge="4"
+                    schrittuntertitel="Eiweiß"></app-schrittzutat>
+
+                <app-schrittzutat schrittzutatenbild="assets/img/Salz.jpg" schrittuntertitelmenge="1 Prise"
+                    schrittuntertitel="Salz"></app-schrittzutat>
+
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a>Das Eiweiß zusammen mit einer Prise Salz steif schlagen.</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="schrittüberschrift"> Schritt 3</a>
+
+            <div class="schrittzutaten">
+                <app-schrittzutat schrittzutatenbild="assets/img/Eigelb.jpg" schrittuntertitelmenge="4"
+                    schrittuntertitel="Eigelb"></app-schrittzutat>
+
+                <app-schrittzutat schrittzutatenbild="assets/img/Zucker.jpg" schrittuntertitelmenge="2 EL"
+                    schrittuntertitel="Zucker"></app-schrittzutat>
+
+                <app-schrittzutat schrittzutatenbild="assets/img/Milch.jpg" schrittuntertitelmenge="3/8 l"
+                    schrittuntertitel="Milch"></app-schrittzutat>
+
+                <app-schrittzutat schrittzutatenbild="assets/img/Mehl.jpg" schrittuntertitelmenge="150 g"
+                    schrittuntertitel="Mehl"></app-schrittzutat>
+
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a> Das Eigelb mit Milch, Zucker und Mehl verquirrlen.</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="schrittüberschrift"> Schritt 4</a>
+
+            <div class="schrittzutaten">
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a>Das Eiweiß vorsichtig unter die restliche Masse heben. </a>
+            </div>
+        </div>
+
+        <div>
+            <a class="schrittüberschrift"> Schritt 5</a>
+
+            <div class="schrittzutaten">
+                <app-schrittzutat schrittzutatenbild="assets/img/Butter.jpg" schrittuntertitelmenge="etwas"
+                    schrittuntertitel="Butter"></app-schrittzutat>
+
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a>In einer Pfanne viel Butter erhitzen und eine kleine Portion des Teiges hineingeben . </a>
+            </div>
+        </div>
+
+        <div>
+            <a class="schrittüberschrift"> Schritt 6</a>
+
+            <div class="schrittzutaten">
+                <app-schrittzutat schrittzutatenbild="assets/img/Rosinen.jpg" schrittuntertitelmenge="einige"
+                    schrittuntertitel="Rosinen"></app-schrittzutat>
+
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a>Rosinen gleichmäßig auf dem Teig verteilen. Ist die untere Seite gold-braun, kann der Kaiserschmarrn
+                    gewendet werden. .</a>
+            </div>
+        </div>
+
+        <div>
+            <a class="schrittüberschrift"> Schritt 7</a>
+
+            <div class="schrittzutaten">
+            </div>
+
+            <div class="schrittbeschreibung">
+                <a>Zum Schluss mit Puderzucker bestreuen. Dazu schmeckt Apfelmus.</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="abschluss">
+        <a>Guten Appetit!</a>
+    </div>
+
+</div>
