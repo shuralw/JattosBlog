@@ -9,7 +9,7 @@ $font-familyRezepte: "Nunito Sans";
 $font-familyStandard: "Kalam";
 $font-familyPersönlicherText: "Crafty Girls";
 $font-familyUnterschrift: "Rock Salt";
-$font-familyÜberschrift: "Satisfy";
+$font-familyUeberschrift: "Satisfy";
 
 .headercontainer {
     background-color: #CE152B;
@@ -73,7 +73,7 @@ $font-familyÜberschrift: "Satisfy";
     grid-template-areas:
     "logo" 
     "drobdown"
-    "überblog";
+    "ueberblog";
     position: absolute;
     top: 100px;
     grid-row-gap: 15px;
@@ -134,8 +134,8 @@ $font-familyÜberschrift: "Satisfy";
 }
 
 
-.überblog {
-    grid-area: überblog;
+.ueberblog {
+    grid-area: ueberblog;
 }
 
 .fließtext {
@@ -154,7 +154,7 @@ $font-familyÜberschrift: "Satisfy";
 
 
 @media only screen and (min-width: 1200px) {
-    .textgrößeüberschriften {
+    .textgrößeueberschriften {
         font-size: $fontsizeHeadinggroß;
     }
 

@@ -9,7 +9,7 @@ $font-familyRezepte: "Nunito Sans";
 $font-familyStandard: "Kalam";
 $font-familyPersönlicherText: "Crafty Girls";
 $font-familyUnterschrift: "Rock Salt";
-$font-familyÜberschrift: "Satisfy";
+$font-familyUeberschrift: "Satisfy";
 
 .headercontainer {
     background-color: #ce152b;
@@ -71,10 +71,10 @@ $font-familyÜberschrift: "Satisfy";
     display: grid;
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas:
-        "Überschrift"
+        "Ueberschrift"
         "Searching"
         "kategorie"
-        "kategorieüberschrift"
+        "kategorieueberschrift"
         "kategorieunterschrift";
     position: absolute;
     top: 100px;
@@ -82,11 +82,11 @@ $font-familyÜberschrift: "Satisfy";
     width: 100%;
 }
 
-.Überschrift {
-    grid-area: Überschrift;
+.Ueberschrift {
+    grid-area: Ueberschrift;
     text-align: center;
     color: #ce152b;
-    font-family: $font-familyÜberschrift;
+    font-family: $font-familyUeberschrift;
     font-size: $fontsizeHeadinggroß;
     vertical-align: middle;
 }
@@ -108,8 +108,8 @@ $font-familyÜberschrift: "Satisfy";
         vertical-align: middle;
     }
 
-    .kategorieüberschrift {
-        grid-area: kategorieüberschrift;
+    .kategorieueberschrift {
+        grid-area: kategorieueberschrift;
         text-align: center;
         color: #ce152b;
         font-family: $font-familyStandard;

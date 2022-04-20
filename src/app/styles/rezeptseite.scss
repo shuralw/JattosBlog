@@ -9,7 +9,7 @@ $font-familyRezepte: "Nunito Sans";
 $font-familyStandard: "Kalam";
 $font-familyPersönlicherText: "Crafty Girls";
 $font-familyUnterschrift: "Rock Salt";
-$font-familyÜberschrift: "Satisfy";
+$font-familyUeberschrift: "Satisfy";
 
 .headercontainer {
     background-color: #ce152b;
@@ -72,11 +72,11 @@ $font-familyÜberschrift: "Satisfy";
     grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-columns: auto;
     grid-template-areas:
-        "überschrift"
-        "Überschrifttext"
-        "überschriftbild"
+        "ueberschrift"
+        "Ueberschrifttext"
+        "ueberschriftbild"
         "unterschrifttext"
-        "zutatenüberschrift"
+        "zutatenueberschrift"
         "zutaten"
         "utensilien"
         "schritte"
@@ -87,15 +87,15 @@ $font-familyÜberschrift: "Satisfy";
     width: 100%;
 }
 
-.überschrift {
+.ueberschrift {
     text-align: center;
     color: #ce152b;
-    font-family: $font-familyÜberschrift;
+    font-family: $font-familyUeberschrift;
     font-size: $fontsizeHeadinggroß;
     vertical-align: middle;
 }
 
-.überschrifttext {
+.ueberschrifttext {
     text-align: center;
     color: #ce152b;
     font-family: $font-familyStandard;
@@ -103,13 +103,13 @@ $font-familyÜberschrift: "Satisfy";
     vertical-align: middle;
 }
 
-.überschriftbild {
-    grid-area: überschriftbild;
+.ueberschriftbild {
+    grid-area: ueberschriftbild;
     width: 100%;
     height: 100%;
 }
 
-.überschriftbild img {
+.ueberschriftbild img {
     display: block;
     width: 75%;
     margin: auto;
@@ -125,7 +125,7 @@ $font-familyÜberschrift: "Satisfy";
     vertical-align: middle;
 }
 
-.zutatenüberschrift {
+.zutatenueberschrift {
     text-align: center;
     color: #ce152b;
     font-family: $font-familyStandard;
@@ -190,7 +190,7 @@ $font-familyÜberschrift: "Satisfy";
     display: flex;
     flex-direction: column;
 
-    .schrittüberschrift {
+    .schrittueberschrift {
         text-align: center;
         color: #ce152b;
         font-family: $font-familyStandard;
@@ -254,7 +254,7 @@ $font-familyÜberschrift: "Satisfy";
     grid-area: abschluss;
     text-align: center;
     color: #ce152b;
-    font-family: $font-familyÜberschrift;
+    font-family: $font-familyUeberschrift;
     font-size: $fontsizeHeadinggroß;
     vertical-align: middle;
     height: 120px;

@@ -9,7 +9,7 @@ $font-familyRezepte: "Nunito Sans";
 $font-familyStandard: "Kalam";
 $font-familyPersönlicherText: "Crafty Girls";
 $font-familyUnterschrift: "Rock Salt";
-$font-familyÜberschrift: "Satisfy";
+$font-familyUeberschrift: "Satisfy";
 
 .headercontainer {
     background-color: #ce152b;
@@ -72,7 +72,7 @@ $font-familyÜberschrift: "Satisfy";
     grid-template-rows: auto auto auto auto auto auto auto;
     grid-template-columns: auto;
     grid-template-areas:
-        "überschrift "
+        "ueberschrift "
         "bananenbild"
         "bananentext"
         "mangobild"
@@ -85,10 +85,10 @@ $font-familyÜberschrift: "Satisfy";
     width: 100%;
 }
 
-.überschrift {
+.ueberschrift {
     text-align: center;
     color: #ce152b;
-    font-family: $font-familyÜberschrift;
+    font-family: $font-familyUeberschrift;
     font-size: $fontsizeHeadinggroß;
     vertical-align: middle;
 }
